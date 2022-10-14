@@ -1,0 +1,21 @@
+{
+  "name": "0.package-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitty": "node g.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jerry0408/nodetest1.git"
+  },
+  "keywords": [],
+  "author": "Jeffrey Gao <zhiyuangao0408@gmail.com>",
+  "license": "Caltech",
+  "bugs": {
+    "url": "https://github.com/Jerry0408/nodetest1/issues"
+  },
+  "homepage": "https://github.com/Jerry0408/nodetest1#readme"
+}
