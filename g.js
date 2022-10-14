@@ -5,13 +5,22 @@ args.splice(0, 2);
 let str = args.join(" ");
 
 console.log(str);
-exec("git add .", cb);
-exec(`git commit -m "${str}"`, cb);
+exec("git add .", cbadd);
 
-function cb(err, strout, sdtin) {
+function cbadd(err, strout, sdtin) {
   if (err) {
     console.log(err);
     return;
   }
-  
+  exec(`git commit -m "${str}"`, cbcommit);
+
+}
+
+function cbcommit(err, strout, sdtin) {
+  if (err) {
+    console.log(err);
+    return;
+  }
+  console.log("Done");
+
 }
